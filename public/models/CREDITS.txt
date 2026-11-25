@@ -1,0 +1,36 @@
+Zombie Hazmat - by LxNazarov, CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)
+Gun & attachment models - supplied by the project owner (glTF pack).
+
+Nuclear zone buildings, tanks, street props (public/models/nuke/*.glb):
+  Quaternius - Modular Sci-Fi / Cyberpunk / Post-Apocalypse / City packs, CC0 1.0 (https://quaternius.com)
+
+Dragons (Sketchfab, CC-BY-4.0):
+- "Animated Dragon Three Motion Loops" by LasquetiSpice (reactor wyrm, flying.glb)
+- "Prowler Dragon Variant Rig" by DM-913 / SuperKapoo913 (sand dragon on foot, prowler.glb)
+- "Tarisland - Dragon (High Poly)" by Doctor A. (frost dragon, tarisland.glb)
+
+
+public/models/village/* — Quaternius "Medieval Village Pack" (CC0), see LICENSE.txt there.
+public/models/monsters/Imp.glb, Puglin.glb, *_N.jpg — Quaternius "Bestiary - Dungeon Monsters Kit" (Quaternius Asset License), see LICENSE_Bestiary.txt.
+public/models/monsters/ual.gltf — Quaternius "Universal Animation Library" (CC0), see LICENSE_UAL.txt.
+
+Dinosaurs / vehicle (Sketchfab; converted to metal-rough + meshopt/webp, otherwise unmodified):
+- "Animated Tyrannosaurus Rex Dinosaur Running Loop" by LasquetiSpice — CC-BY-4.0 — https://sketchfab.com/3d-models/animated-tyrannosaurus-rex-dinosaur-running-loop-38007d947ae74dea83988cb0b08ee053
+- "Animated Flying Pteradactal Dinosaur Loop" by LasquetiSpice — CC-BY-4.0 — https://sketchfab.com/3d-models/animated-flying-pteradactal-dinosaur-loop-09f6b1ff7bfd4a2d8d9c0b9827f2a708
+- "PBR Velociraptor Animated" by Ferocious Industries — CC-BY-4.0 — https://sketchfab.com/3d-models/pbr-velociraptor-animated-8f1744af7b0847a2aabe3df90be802f0
+- "PBR Stegasaurus Animated" by Ferocious Industries — CC-BY-4.0 — https://sketchfab.com/3d-models/pbr-stegasaurus-animated-ec254ea1554941fe8a131f62db0faf3d
+- "Animated Triceratops Skeleton" by Zacxophone — CC0 — https://sketchfab.com/3d-models/animated-triceratops-skeleton-06cb55f941d94dc8b95ac46f92d89e7c
+- "D Raider" by Svyatoslav Ovchinnik (smackyplay) — CC-BY-4.0 — https://sketchfab.com/3d-models/d-raider-03bad58dd2394ac1a76ede6190d9d270
+
+Villagers: Quaternius "Ultimate Modular Men" / "Ultimate Modular Women" packs (Farmer, Worker, King, Adventurer / Medieval, Witch, Worker, Adventurer) — CC0 (quaternius.com)
+public/models/fauna/Parasaurolophus.glb, Triceratops.glb, Apatosaurus.glb — Quaternius animated dinosaurs (CC0, quaternius.com; pack name not re-checked)
+
+public/models/faceless/kit.glb — pieces from Quaternius "Medieval Village MegaKit" (CC0, quaternius.com), merged + webp/meshopt compressed.
+public/models/faceless/Wizard.glb, Monk.glb — Quaternius "Wizard" and "Monk" characters (CC0, quaternius.com), webp/meshopt compressed.
+
+Planes (public/models/planes/*.glb; Sketchfab, CC-BY-4.0 https://creativecommons.org/licenses/by/4.0/; converted to meshopt (+ webp 2048 textures for the VTOL), war plane's ground plane removed, otherwise unmodified):
+- warplane.glb: "Stylized War Plane" by Nirvana Studio (https://sketchfab.com/nirvanastudio) — CC-BY-4.0 — https://sketchfab.com/3d-models/stylized-war-plane-08bf8ec5d89e4f5dbb393f053edd3242
+- vtol.glb: "Heavy VTOL gunship" by Kai Xiang (https://sketchfab.com/kirikom9000) — CC-BY-4.0 — https://sketchfab.com/3d-models/heavy-vtol-gunship-86d336e0fa6f40329de8cda4a71d8a17
+
+Knights (public/models/knights/*.fbx): Quaternius "Knight" character + Sword / Helmet1-3 / ShoulderPads (CC0, quaternius.com), unmodified.
+Assassins (public/models/assassins/Rogue.gltf): "Rogue" character with dagger + animations (Quaternius-style low-poly; supplied by the user, licence to confirm), materials switched from unlit to lit at runtime.
