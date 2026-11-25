@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Extraction
 
-## Getting Started
+A first-person open-world survival/extraction game that runs in the browser. Built with Next.js, React Three Fiber and three.js.
 
-First, run the development server:
+The world is one continuous map made of themed zones: a grass village guarded by knights, a frozen lake, a jungle with dinosaurs, a desert with an oasis, a nuclear wasteland, and a ruined "faceless" village. Each zone has its own props, creatures and atmosphere.
+
+## Features
+
+- **Procedural terrain** with biome blending, streamed props, instanced grass and a spatial-hash collision system (circle and yawed-box colliders).
+- **Shader-driven atmosphere**: day/night sky dome, per-zone fog and lighting, snowfall, dust.
+- **Oasis**: planar-reflection water shader with refraction, caustics, foam and a heightmap bed; reeds, lily pads, palms, mud huts, and the assassins who live there.
+- **Arsenal**: 20 sci-fi guns across assault rifles, SMGs, snipers, crossbows and grenades, with scopes, recoil, homing and beam weapons.
+- **Enemies and NPCs**: zombies, imps and puglins, dinosaurs, pterosaurs, dragons, sorcerers, villagers, knights, and the Assassins of the Oasis. Hurting a faction turns its guards on you.
+- **Vehicles and aircraft**: a raider buggy, a war plane and a VTOL gunship with a flight model.
+- **HUD**: minimap, scope overlay, arsenal screen, zone banners, fast travel.
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000). A GPU-accelerated browser is strongly recommended.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Other scripts:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build   # production build
+npm run start   # serve the production build
+npm run lint    # eslint
+```
 
-## Learn More
+## Project layout
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+  app/                 Next.js app router shell
+  components/          HUD, minimap, arsenal, overlays, canvas host
+  game/
+    terrain.ts         heightfield, biome masks, oasis/village layout
+    atmosphere.ts      sky, fog and sun state
+    store.ts           zustand game state and shared pose
+    weapons/           arsenal definitions, combat, fx, audio
+    world/             scene, props streaming, creatures, vehicles, zones
+public/models/         glTF/FBX assets (see CREDITS.txt)
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Assets and credits
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All 3D models live in `public/models`. Attribution and licences are listed in [`public/models/CREDITS.txt`](public/models/CREDITS.txt). Several models are CC-BY and require attribution; the licence of `assassins/Rogue.gltf` still needs to be confirmed.
